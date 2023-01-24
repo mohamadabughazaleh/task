@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Validatio } from "../shcemas/index";
+import { Validation } from "../shcemas/index";
 import { CreateInfo } from "../Api/SendData";
 import { useFormik } from "formik";
 import {
@@ -36,7 +36,7 @@ function Example(args) {
       password: "",
       avatar: "",
     },
-    validationSchema: Validatio,
+    validationSchema: Validation,
     onSubmit: async (submittedValues) => {
       const inputs = {
         firstname: submittedValues.firstname,
