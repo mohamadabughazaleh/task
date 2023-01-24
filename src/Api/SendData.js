@@ -3,10 +3,11 @@ import { NotifySuccess, NotifyError } from "../Notify/Notify";
 export function CreateInfo(url, inputs) {
   axios
     .post(url, inputs)
-    .then((e) => {
+    .then(() => {
       NotifySuccess("Success");
     })
-    .catch((error) => {
+
+    .catch(() => {
       NotifyError("Error");
     });
 }
